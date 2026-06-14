@@ -1,0 +1,132 @@
+[
+  {
+    "slug": "global-leaders-climate-deadline",
+    "title": "Global Leaders Convene as Climate Deadline Looms",
+    "excerpt": "Delegates from over 190 nations gather amid mounting pressure to deliver binding cuts before the window closes for good.",
+    "imageUrl": "https://picsum.photos/seed/herald-climate/1280/860",
+    "category": { "id": "world", "label": "World" },
+    "publishedAt": "2026-06-13T07:45:00Z",
+    "byline": {
+      "author": "Eleanor Marsh",
+      "avatarUrl": "https://picsum.photos/seed/herald-marsh/96/96"
+    },
+    "body": "<p>The summit opened under a grey London sky, but the mood inside the hall was anything but subdued. Negotiators arrived with a single number fixed in their minds: the years left before the agreed carbon budget is spent.</p><h2>A narrowing window</h2><p>For the first time, the draft text ties financing directly to enforceable milestones. Smaller nations, long sceptical of grand declarations, called it the most concrete proposal in a decade.</p><blockquote>We have run out of room for symbolic gestures. What survives this week has to be measurable by next spring.</blockquote><p>Whether the language holds through the final sessions remains the open question. The coming days will test how far ambition can stretch before it meets the limits of politics.</p>"
+  },
+  {
+    "slug": "ai-reshaping-newsroom",
+    "title": "The Quiet Revolution: How AI Is Reshaping the Newsroom",
+    "excerpt": "Inside the editorial floors where algorithms now draft headlines, surface leads, and quietly redraw the boundaries of modern journalism.",
+    "imageUrl": "https://picsum.photos/seed/herald-ai/1280/860",
+    "category": { "id": "technology", "label": "Technology" },
+    "publishedAt": "2026-06-13T06:30:00Z",
+    "byline": {
+      "author": "Daniel Okafor",
+      "avatarUrl": "https://picsum.photos/seed/herald-okafor/96/96"
+    },
+    "body": "<p>In the 48 hours before deadline, the newsroom hums with a different kind of energy. Where copy editors once squinted at proofs, machine-learning models now scan thousands of incoming wire reports, ranking them by relevance and surfacing the stories most likely to define the morning agenda.</p><p>For decades the architecture of a newsroom was a study in human hierarchy — reporters feeding editors, editors feeding the front page. Today, that pipeline is increasingly mediated by software that suggests headlines, flags factual inconsistencies, and even predicts which angle a given audience will click.</p><blockquote>The newsroom didn't replace our judgment — it amplified it, and in doing so forced us to ask what judgment really means.</blockquote><h2>When Speed Meets Scrutiny</h2><p>Yet the promise of automation carries an undercurrent of unease. Editors describe a growing tension between the relentless pace these tools enable and the slower, deliberative work that distinguishes reliable journalism from noise.</p><p>The answer, most veterans insist, is not to resist the machine but to redraw the line between what it accelerates and what it must never decide alone.</p>"
+  },
+  {
+    "slug": "great-devolution-new-map-of-power",
+    "title": "The Great Devolution: A New Map of Power",
+    "excerpt": "As capitals cede authority to regions, a quiet redistribution of power is rewriting the political geography of the continent.",
+    "imageUrl": "https://picsum.photos/seed/herald-devolution/1280/860",
+    "category": { "id": "politics", "label": "Politics" },
+    "publishedAt": "2026-06-12T19:10:00Z",
+    "byline": {
+      "author": "Priya Nair",
+      "avatarUrl": "https://picsum.photos/seed/herald-nair/96/96"
+    },
+    "body": "<p>Devolution was once a footnote in constitutional law. This year it has become the headline.</p><h2>Power, redistributed</h2><p>Regional assemblies that began with modest mandates now control budgets that rival national ministries, and the centre is learning to negotiate rather than dictate.</p><blockquote>The map looks the same. The power that flows across it does not.</blockquote><p>For voters, the shift is less abstract: decisions on transport, housing and health increasingly carry a local accent.</p>"
+  },
+  {
+    "slug": "markets-rally-rate-pause",
+    "title": "Markets Rally as Central Banks Signal a Rate Pause",
+    "excerpt": "Equities surged across three continents after policymakers hinted that the long tightening cycle may finally be drawing to a close.",
+    "imageUrl": "https://picsum.photos/seed/herald-markets/1280/860",
+    "category": { "id": "business", "label": "Business" },
+    "publishedAt": "2026-06-12T16:20:00Z",
+    "byline": {
+      "author": "Marcus Brennan",
+      "avatarUrl": "https://picsum.photos/seed/herald-brennan/96/96"
+    },
+    "body": "<p>Traders had braced for caution. Instead they got a signal.</p><h2>Relief, with caveats</h2><p>The carefully worded statement stopped short of declaring victory over inflation, but markets heard what they wanted to hear and ran with it.</p><blockquote>A pause is not a pivot — but after eighteen months of tightening, the market will take what it can get.</blockquote><p>Analysts cautioned that a single dovish sentence does not undo a year of restraint, and that the data, not the rhetoric, will set the next move.</p>"
+  },
+  {
+    "slug": "years-most-talked-about-retrospective",
+    "title": "Inside the Year's Most Talked-About Retrospective",
+    "excerpt": "A sprawling new exhibition asks whether a movement can be understood only once it is over — and finds the question harder than it looks.",
+    "imageUrl": "https://picsum.photos/seed/herald-retrospective/1280/860",
+    "category": { "id": "culture", "label": "Culture" },
+    "publishedAt": "2026-06-12T12:05:00Z",
+    "byline": {
+      "author": "Sofia Almeida",
+      "avatarUrl": "https://picsum.photos/seed/herald-almeida/96/96"
+    },
+    "body": "<p>The first room is almost empty. That is the point.</p><h2>The shape of a movement</h2><p>Curators have resisted the temptation to crowd the walls, letting each work breathe and trusting visitors to make the connections themselves.</p><blockquote>A retrospective is an argument disguised as a hanging order.</blockquote><p>By the final gallery the argument has landed, and the early restraint reads less as caution than as confidence.</p>"
+  },
+  {
+    "slug": "chipmakers-race-next-ai-era",
+    "title": "Chipmakers Race to Power the Next AI Era",
+    "excerpt": "Demand for specialised silicon is rewriting global supply chains, and the firms that control fabrication now hold extraordinary leverage.",
+    "imageUrl": "https://picsum.photos/seed/herald-chips/1280/860",
+    "category": { "id": "technology", "label": "Technology" },
+    "publishedAt": "2026-06-12T09:40:00Z",
+    "byline": {
+      "author": "Hannah Whitfield",
+      "avatarUrl": "https://picsum.photos/seed/herald-whitfield/96/96"
+    },
+    "body": "<p>Every leap in artificial intelligence rests on a quieter race fought in cleanrooms measured in nanometres.</p><h2>The fabrication squeeze</h2><p>As models grow hungrier, the bottleneck has shifted from algorithms to the foundries able to print them at scale.</p><blockquote>Whoever controls the leading-edge node controls the pace of the entire field.</blockquote><p>Governments have noticed, and what was once an industrial concern is fast becoming a question of strategy.</p>"
+  },
+  {
+    "slug": "galleries-reimagine-modern-exhibition",
+    "title": "Galleries Reimagine the Modern Exhibition",
+    "excerpt": "Institutions are tearing up the white-cube playbook, blending sound, light and architecture into something closer to immersion than display.",
+    "imageUrl": "https://picsum.photos/seed/herald-galleries/1280/860",
+    "category": { "id": "culture", "label": "Culture" },
+    "publishedAt": "2026-06-12T08:15:00Z",
+    "byline": {
+      "author": "Theo Lindqvist",
+      "avatarUrl": "https://picsum.photos/seed/herald-lindqvist/96/96"
+    },
+    "body": "<p>The painting is still there. Almost everything around it has changed.</p><h2>Beyond the white cube</h2><p>Designers now treat the gallery as a medium in its own right, choreographing how a visitor moves, pauses and looks.</p><blockquote>The frame is no longer the edge of the work. The room is.</blockquote><p>Purists worry that spectacle will crowd out substance. The crowds, for now, disagree.</p>"
+  },
+  {
+    "slug": "landmark-discovery-forgotten-era",
+    "title": "A Landmark Discovery Reframes a Forgotten Era",
+    "excerpt": "A cache of artefacts unearthed far from any known settlement is forcing historians to redraw the timeline of an entire region.",
+    "imageUrl": "https://picsum.photos/seed/herald-discovery/1280/860",
+    "category": { "id": "science", "label": "Science" },
+    "publishedAt": "2026-06-11T18:50:00Z",
+    "byline": {
+      "author": "Dr. Amara Osei",
+      "avatarUrl": "https://picsum.photos/seed/herald-osei/96/96"
+    },
+    "body": "<p>The site should not have existed. The maps said so.</p><h2>Rewriting the timeline</h2><p>Carbon dating placed the find centuries earlier than the prevailing consensus allowed, and the consensus is now under quiet review.</p><blockquote>Every confident timeline is one discovery away from revision.</blockquote><p>The team is cautious, but the implications, if they hold, are difficult to overstate.</p>"
+  },
+  {
+    "slug": "speed-meets-scrutiny-global-trade",
+    "title": "When Speed Meets Scrutiny in Global Trade",
+    "excerpt": "Faster customs and tighter oversight were meant to coexist. A wave of new rules is testing whether they actually can.",
+    "imageUrl": "https://picsum.photos/seed/herald-trade/1280/860",
+    "category": { "id": "business", "label": "Business" },
+    "publishedAt": "2026-06-11T14:25:00Z",
+    "byline": {
+      "author": "Lena Hoffmann",
+      "avatarUrl": "https://picsum.photos/seed/herald-hoffmann/96/96"
+    },
+    "body": "<p>At the busiest ports, a container now clears in hours that once took days. The paperwork, meanwhile, has multiplied.</p><h2>Two goals, one chokepoint</h2><p>Regulators insist that speed and scrutiny are complementary. Operators on the ground describe a daily negotiation between the two.</p><blockquote>You can move fast or you can check everything. The art is knowing which matters when.</blockquote><p>The next round of rules will decide whether the balance tips toward flow or toward friction.</p>"
+  },
+  {
+    "slug": "cities-net-zero-targets",
+    "title": "Cities Pledge Bold Net-Zero Targets for the Decade",
+    "excerpt": "A coalition of mayors has committed to deadlines their national governments have so far avoided — and dared the centre to keep up.",
+    "imageUrl": "https://picsum.photos/seed/herald-cities/1280/860",
+    "category": { "id": "world", "label": "World" },
+    "publishedAt": "2026-06-11T10:00:00Z",
+    "byline": {
+      "author": "Joaquín Reyes",
+      "avatarUrl": "https://picsum.photos/seed/herald-reyes/96/96"
+    },
+    "body": "<p>The announcement came not from a capital but from a city hall, and that detail is the story.</p><h2>Local ambition, national lag</h2><p>Mayors argue that cities, where most emissions are produced, are also where the fastest cuts can be made.</p><blockquote>We are not waiting for permission to act on our own streets.</blockquote><p>The pledge sets a deadline the decade will not let them quietly forget.</p>"
+  }
+]

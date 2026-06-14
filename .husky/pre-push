@@ -1,0 +1,7 @@
+echo "\n🔧 Running ESLint..."
+npm run lint || exit 1
+
+echo "\n🔍 Type checking..."
+npm run typecheck || exit 1
+
+echo "\n✅ Pre-push checks passed.\n"
