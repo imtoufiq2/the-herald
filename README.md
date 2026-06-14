@@ -10,15 +10,15 @@ A small, production-quality news website built for the FE take-home assignment. 
 
 ## Tech stack
 
-| Concern | Choice |
-|---|---|
-| Framework | **Next.js 16** (App Router, Turbopack) |
-| Language | **TypeScript** (strict) |
-| UI | **React 19** |
-| Styling | **Tailwind CSS v4** with semantic CSS-variable tokens |
-| Fonts | `next/font` — **Source Serif 4** (headlines) + **Inter** (UI), self-hosted |
-| Data | **Guardian Content API**, with a local JSON fallback |
-| Tooling | ESLint (flat) · Prettier · Husky (pre-push) · knip · Vitest |
+| Concern   | Choice                                                                     |
+| --------- | -------------------------------------------------------------------------- |
+| Framework | **Next.js 16** (App Router, Turbopack)                                     |
+| Language  | **TypeScript** (strict)                                                    |
+| UI        | **React 19**                                                               |
+| Styling   | **Tailwind CSS v4** with semantic CSS-variable tokens                      |
+| Fonts     | `next/font` — **Source Serif 4** (headlines) + **Inter** (UI), self-hosted |
+| Data      | **Guardian Content API**, with a local JSON fallback                       |
+| Tooling   | ESLint (flat) · Prettier · Husky (pre-push) · knip · Vitest                |
 
 ---
 
@@ -37,24 +37,24 @@ npm run dev                  # http://localhost:3000
 
 ### Scripts
 
-| Script | What it does |
-|---|---|
-| `npm run dev` | Dev server (Turbopack) |
-| `npm run build` / `start` | Production build / serve |
-| `npm run lint` | ESLint |
-| `npm run lint:fix` | ESLint `--fix` + Prettier write |
-| `npm run typecheck` | `tsc --noEmit` |
-| `npm run test` | Vitest unit tests |
-| `npm run knip` | Dead-code / unused-dependency report |
+| Script                    | What it does                         |
+| ------------------------- | ------------------------------------ |
+| `npm run dev`             | Dev server (Turbopack)               |
+| `npm run build` / `start` | Production build / serve             |
+| `npm run lint`            | ESLint                               |
+| `npm run lint:fix`        | ESLint `--fix` + Prettier write      |
+| `npm run typecheck`       | `tsc --noEmit`                       |
+| `npm run test`            | Vitest unit tests                    |
+| `npm run knip`            | Dead-code / unused-dependency report |
 
 `git push` runs **lint + typecheck** via a Husky pre-push hook.
 
 ### Environment variables
 
-| Var | Required | Purpose |
-|---|---|---|
-| `GUARDIAN_API_KEY` | No* | Guardian Content API key. _Without it, the app serves `src/data/mock-articles.json`._ |
-| `REVALIDATE_SECRET` | No | Shared secret for the on-demand revalidation endpoint. |
+| Var                 | Required | Purpose                                                                               |
+| ------------------- | -------- | ------------------------------------------------------------------------------------- |
+| `GUARDIAN_API_KEY`  | No\*     | Guardian Content API key. _Without it, the app serves `src/data/mock-articles.json`._ |
+| `REVALIDATE_SECRET` | No       | Shared secret for the on-demand revalidation endpoint.                                |
 
 \* The data source is intentionally swappable — set the key for live news, omit it for the bundled mock feed. Get a free key at <https://open-platform.theguardian.com/access/>.
 
@@ -64,11 +64,11 @@ npm run dev                  # http://localhost:3000
 
 ### Rendering strategy (per page)
 
-| Route | Strategy | Why |
-|---|---|---|
-| `/` | **Static + ISR** (`revalidate = 60`) | Feed is mostly stable; serve cached HTML, regenerate every 60s. |
+| Route             | Strategy                                                                    | Why                                                                                    |
+| ----------------- | --------------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| `/`               | **Static + ISR** (`revalidate = 60`)                                        | Feed is mostly stable; serve cached HTML, regenerate every 60s.                        |
 | `/article/[slug]` | **SSG + ISR** (`generateStaticParams`, `dynamicParams`, `revalidate = 300`) | Pre-render known articles at build; render unknown slugs on first request, then cache. |
-| `/api/revalidate` | **Dynamic** route handler | On-demand cache invalidation (see below). |
+| `/api/revalidate` | **Dynamic** route handler                                                   | On-demand cache invalidation (see below).                                              |
 
 ### Data layer
 
@@ -163,10 +163,10 @@ src/
 
 Measured on the deployed production build via PageSpeed Insights / Lighthouse (desktop), <https://the-herald-three.vercel.app/>:
 
-| Page | Performance | Accessibility | Best Practices | SEO |
-|---|---|---|---|---|
-| **Home** (`/`) | **100** | **100** | **100** | **100** |
-| **Article** (`/article/[slug]`) | **100** | **100** | **100** | **100** |
+| Page                            | Performance | Accessibility | Best Practices | SEO     |
+| ------------------------------- | ----------- | ------------- | -------------- | ------- |
+| **Home** (`/`)                  | **100**     | **100**       | **100**        | **100** |
+| **Article** (`/article/[slug]`) | **100**     | **100**       | **100**        | **100** |
 
 ![Lighthouse — Home page: 100 / 100 / 100 / 100](docs/lighthouse-home.png)
 

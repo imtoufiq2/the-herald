@@ -1,2 +1,2 @@
-// Prevents a theme flash by setting the correct theme (saved preference or system preference) on the <html> element before the page is first painted. 
+// Prevents a theme flash by setting the correct theme (saved preference or system preference) on the <html> element before the page is first painted.
 export const THEME_SCRIPT = `(function(){try{var s=localStorage.getItem('theme');var t=s||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='light';}})();`;
