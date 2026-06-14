@@ -29,14 +29,14 @@
   --footer-muted: #5b5f66;
   --footer-border: #e5e5e5;
 
-  /* Article hero "glow" gradient — token-driven + theme-aware (see README).
-     Base near-black with four layered radial glows, muted by a veil. */
+  /* Article hero "glow" gradient — token-driven (see README). Four radial glows
+     (Figma exact: crimson, azure, violet, indigo) over a near-black base. */
   --hero-base: #0b0d1a;
-  --hero-veil: rgba(0, 0, 0, 0.5);
-  --hero-glow-1: rgba(214, 37, 59, 0.65); /* crimson, top-left */
-  --hero-glow-2: rgba(59, 43, 214, 0.5); /* blue, top-right */
-  --hero-glow-3: rgba(124, 31, 214, 0.45); /* violet, bottom-mid */
-  --hero-glow-4: rgba(31, 79, 214, 0.5); /* azure, bottom-right */
+  --hero-veil: transparent; /* light: no overlay; dark adds #000 @ 65% */
+  --hero-glow-1: rgba(214, 37, 59, 0.7); /* crimson #D6253B @ 70% */
+  --hero-glow-2: rgba(31, 79, 214, 0.5); /* azure   #1F4FD6 @ 50% */
+  --hero-glow-3: rgba(124, 31, 214, 0.55); /* violet  #7C1FD6 @ 55% */
+  --hero-glow-4: rgba(59, 43, 214, 0.8); /* indigo  #3B2BD6 @ 80% */
 
   --container-max: 1200px;
   --prose-max: 680px;
@@ -72,13 +72,13 @@
   --footer-muted: #9aa0a8;
   --footer-border: #262a30;
 
-  /* Hero glow adapts to dark: lift the veil + boost glows so the gradient
-     stays vivid against the near-black page (base stays #0b0d1a). */
-  --hero-veil: rgba(0, 0, 0, 0.35);
-  --hero-glow-1: rgba(214, 37, 59, 0.7);
-  --hero-glow-2: rgba(59, 43, 214, 0.55);
-  --hero-glow-3: rgba(124, 31, 214, 0.5);
-  --hero-glow-4: rgba(31, 79, 214, 0.55);
+  /* Article hero glow — dark frame: brighter, higher-opacity glows, muted by a
+     #000 @ 65% overlay (--hero-veil). Same positions as light. */
+  --hero-veil: rgba(0, 0, 0, 0.65);
+  --hero-glow-1: rgba(255, 30, 60, 0.85); /* crimson #FF1E3C @ 85% */
+  --hero-glow-2: rgba(31, 63, 230, 0.85); /* azure   #1F3FE6 @ 85% */
+  --hero-glow-3: rgba(124, 31, 230, 0.7); /* violet  #7C1FE6 @ 70% */
+  --hero-glow-4: rgba(44, 26, 230, 0.75); /* indigo  #2C1AE6 @ 75% */
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -225,20 +225,17 @@ body {
 }
 
 /* ─────────────────────────────────────────────────────────────
-   Article hero "glow" band — a fixed dark gradient used in BOTH
-   themes (Figma signature): deep crimson top-left, indigo/violet
-   along the right and base, over near-black. Layered radial
-   gradients (not blurred blobs) so it reads the same in light + dark.
+   Article hero "glow" band — base #0b0d1a + four radial glows placed to
+   match Figma: crimson upper-left, azure & violet lower-centre, indigo
+   right. Circle radii ≈ the Figma blob radius + its 64px blur; centres are
+   percentages so they track the responsive hero. Pure CSS — no image asset.
    ───────────────────────────────────────────────────────────── */
 .article-hero {
   background-color: var(--hero-base);
-  /* Veil (token) mutes the four radial glow tokens — all theme-aware, so the
-     same rule renders the Figma glow in light and a slightly richer one in dark.
-     Pure CSS gradients: no image asset, negligible paint cost. */
   background-image:
     linear-gradient(var(--hero-veil), var(--hero-veil)),
-    radial-gradient(75% 95% at 0% 0%, var(--hero-glow-1) 0%, transparent 60%),
-    radial-gradient(65% 80% at 100% 5%, var(--hero-glow-2) 0%, transparent 62%),
-    radial-gradient(75% 85% at 35% 108%, var(--hero-glow-3) 0%, transparent 60%),
-    radial-gradient(60% 75% at 100% 100%, var(--hero-glow-4) 0%, transparent 60%);
+    radial-gradient(circle 373px at 17% 42%, var(--hero-glow-1) 0%, transparent 100%),
+    radial-gradient(circle 314px at 56% 71%, var(--hero-glow-2) 0%, transparent 100%),
+    radial-gradient(circle 344px at 54% 77%, var(--hero-glow-3) 0%, transparent 100%),
+    radial-gradient(circle 358px at 85% 73%, var(--hero-glow-4) 0%, transparent 100%);
 }
