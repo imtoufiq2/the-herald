@@ -4,7 +4,7 @@ A small, production-quality news website built for the FE take-home assignment. 
 
 - **Live demo:** <https://the-herald-three.vercel.app/>
 - **Figma:** [FE-Assignment](https://www.figma.com/design/FPANdDTccJTwCugq3tpnBi/FE-Assignment?node-id=0-1)
-- **Lighthouse (Home):** Performance **100** · Accessibility **96** · Best Practices **100** · SEO **91** — see [Lighthouse](#lighthouse)
+- **Lighthouse (Home):** Performance **100** · Accessibility **100** · Best Practices **100** · SEO **100** — see [Lighthouse](#lighthouse)
 
 ---
 
@@ -161,14 +161,14 @@ src/
 
 ## Lighthouse
 
-Measured on the deployed production build (<https://the-herald-three.vercel.app/>):
+Measured on the deployed production build via PageSpeed Insights / Lighthouse (desktop), <https://the-herald-three.vercel.app/>:
 
 | Page | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
-| **Home** (`/`) | **100** | **96** | **100** | **91** |
+| **Home** (`/`) | **100** | **100** | **100** | **100** |
 | **Article** (`/article/…`) | _TODO_ | _TODO_ | _TODO_ | _TODO_ |
 
-![Lighthouse — Home page](docs/lighthouse-home.png)
+![Lighthouse — Home page: 100 / 100 / 100 / 100](docs/lighthouse-home.png)
 
 > Article-page run pending — generate via Chrome DevTools → Lighthouse (or `npx lighthouse <url> --view`) and add the numbers + screenshot above.
 
