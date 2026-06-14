@@ -2,9 +2,9 @@
 
 A small, production-quality news website built for the FE take-home assignment. Two pages — a **Home / feed** and an **Article detail** (`/article/[slug]`) — with a design system, light/dark theming, a token-driven gradient backdrop, ISR-backed freshness, skeletons, and lazy loading.
 
-- **Live demo:** _TODO — add deployed URL_
+- **Live demo:** <https://the-herald-three.vercel.app/>
 - **Figma:** [FE-Assignment](https://www.figma.com/design/FPANdDTccJTwCugq3tpnBi/FE-Assignment?node-id=0-1)
-- **Lighthouse:** _TODO — add screenshots/numbers (see [Lighthouse](#lighthouse))_
+- **Lighthouse (Home):** Performance **100** · Accessibility **96** · Best Practices **100** · SEO **91** — see [Lighthouse](#lighthouse)
 
 ---
 
@@ -161,15 +161,19 @@ src/
 
 ## Lighthouse
 
-> _TODO — run on the deployed URL and paste numbers + a screenshot for both pages._
->
-> ```
-> Home (/):              Performance __ · Accessibility __ · Best Practices __ · SEO __
-> Article (/article/…):  Performance __ · Accessibility __ · Best Practices __ · SEO __
-> ```
->
-> Generate with Chrome DevTools → Lighthouse, or `npx lighthouse <url> --view`.
+Measured on the deployed production build (<https://the-herald-three.vercel.app/>):
+
+| Page | Performance | Accessibility | Best Practices | SEO |
+|---|---|---|---|---|
+| **Home** (`/`) | **100** | **96** | **100** | **91** |
+| **Article** (`/article/…`) | _TODO_ | _TODO_ | _TODO_ | _TODO_ |
+
+![Lighthouse — Home page](docs/lighthouse-home.png)
+
+> Article-page run pending — generate via Chrome DevTools → Lighthouse (or `npx lighthouse <url> --view`) and add the numbers + screenshot above.
 
 ## Deployment
 
-> _TODO — deploy (Vercel / Netlify) and add the live URL above. Set `GUARDIAN_API_KEY` and `REVALIDATE_SECRET` in the host's environment._
+Deployed on **Vercel**: <https://the-herald-three.vercel.app/>
+
+Set `GUARDIAN_API_KEY` and `REVALIDATE_SECRET` in the Vercel project's environment variables. Pushing to the default branch triggers an automatic build & deploy.

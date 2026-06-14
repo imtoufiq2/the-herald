@@ -4,10 +4,10 @@ type NavOrientation = "horizontal" | "vertical";
 const ITEM_BASE =
   "inline-flex items-center gap-1.5 whitespace-nowrap text-sm font-medium leading-5 transition-[color,opacity]";
 
-// Inactive label: nav-inactive color, hover only nudges opacity (no color change).
-const INACTIVE = "text-nav-inactive opacity-80 hover:opacity-100";
 
-/** A mobile pill (filled chip) vs an inline link — used for icon size + <li> width too. */
+const INACTIVE = "text-nav-inactive hover:text-fg";
+
+
 export function isPill(variant: NavVariant, orientation: NavOrientation): boolean {
   return variant === "pills" && orientation === "horizontal";
 }

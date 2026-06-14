@@ -23,6 +23,7 @@ export function HeroFeature({ article }: { article: ArticleSummary }) {
           <Byline byline={article.byline} publishedAt={article.publishedAt} />
           <Link
             href={`/article/${article.slug}`}
+            aria-label={`Read more: ${article.title}`}
             className="inline-flex w-fit items-center gap-1 text-sm font-semibold text-accent transition-colors hover:text-accent-hover"
           >
             Read More

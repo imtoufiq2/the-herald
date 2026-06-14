@@ -16,6 +16,7 @@ export function SectionHeading({
       {viewAllHref && (
         <Link
           href={viewAllHref}
+          aria-label={`View all ${title}`}
           className="ml-auto text-sm font-medium text-fg-muted transition-colors hover:text-accent"
         >
           View all
