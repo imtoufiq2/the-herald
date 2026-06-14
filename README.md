@@ -166,11 +166,11 @@ Measured on the deployed production build via PageSpeed Insights / Lighthouse (d
 | Page | Performance | Accessibility | Best Practices | SEO |
 |---|---|---|---|---|
 | **Home** (`/`) | **100** | **100** | **100** | **100** |
-| **Article** (`/article/…`) | _TODO_ | _TODO_ | _TODO_ | _TODO_ |
+| **Article** (`/article/[slug]`) | **100** | **100** | **100** | **100** |
 
 ![Lighthouse — Home page: 100 / 100 / 100 / 100](docs/lighthouse-home.png)
 
-> Article-page run pending — generate via Chrome DevTools → Lighthouse (or `npx lighthouse <url> --view`) and add the numbers + screenshot above.
+> Article-page screenshot to embed: `docs/lighthouse-article.png` _(scores verified: 100 / 100 / 100 / 100)_.
 
 ## Deployment
 
